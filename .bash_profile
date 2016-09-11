@@ -1,3 +1,5 @@
-if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
-  exec startx
+if [ "$(tty)" = "/dev/tty1" ]; then
+    startx && exit
 fi
+
+source $HOME/.bashrc

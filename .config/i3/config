@@ -143,10 +143,10 @@ bindsym $mod+Shift+KP_9 move container to workspace $workspace9
 bindsym $mod+Shift+KP_0 move container to workspace $workspace10
 
 # Reload configuration file
-bindsym $mod+Shift+c reload
+bindsym $mod+Shift+r reload
 
 # Restart i3
-bindsym $mod+Shift+r restart
+#bindsym $mod+Shift+r restart
 
 # Logout from i3
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
@@ -171,7 +171,7 @@ bindsym $mod+x mode "resize"
 # finds out, if available)
 bar {
         font pango: Roboto-Regular, FontAwesome 10
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
         position top
 }
 
@@ -196,6 +196,9 @@ bindsym $mod+$alt+Right move workspace to output right
 # Run specific applications on start
 ###
 
+# Merge .Xresources on boot
+exec xrdb -merge $HOME/.Xresources
+
 # Compton
 exec --no-startup-id compton
 
@@ -206,14 +209,10 @@ exec_always --no-startup-id feh --bg-center /home/severin/GoogleDrive/02_Media/0
 exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280x0 --rotate normal --output VIRTUAL1 --off --output DP1 --off --output $output1 --mode 1280x1024 --pos 0x0 --rotate normal
 
 # Other applications
-exec --no-startup-id google-chrome-beta
-exec --no-startup-id gnome-terminal -x bash -c "sudo apt-get update && sudo apt-get upgrade -y"
-exec --no-startup-id gnome-terminal
-exec --no-startup-id thunar
-exec --no-startup-id thunar
-#exec --no-startup-id steam
-#exec --no-startup-id keepass2
-exec --no-startup-id audacious
+
+exec google-chrome-beta
+exec gnome-terminal -x bash -c "sudo apt-get update && sudo apt-get upgrade -y"
+exec audacious
 
 # Assign programs to specific workspaces
 ###
