@@ -29,8 +29,6 @@ bindsym $mod+Shift+q kill
 # Start rofi
 bindsym $mod+r exec rofi -show run -opacity 100 -lines 5 -location 2
 
-
-
 # change focus
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -70,8 +68,8 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Set monitor names
-set $output1 first
-set $output2 second
+set $output1 VGA1
+set $output2 HDMI1
 set $output3 third
 
 # Set workspace titles
