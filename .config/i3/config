@@ -217,7 +217,6 @@ exec audacious
 # Assign programs to specific workspaces
 ###
 assign [class="google-chrome-beta"] $workspace1
-assign [class="Thunar"] $workspace4
 assign [class="Gnome-terminal"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace6
