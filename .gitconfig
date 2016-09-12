@@ -3,7 +3,18 @@
 	name = Severin Kaderli
 
 [alias]
+	# Display the history of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+
+	# Shortcut for status
 	s = status
+
+	# Add all files
 	a = add --all
+
+	# Create a commit and sign it off
 	c = commit -s -m
+
+[color]
+	# Activate color use in git commands
+	ui = auto
