@@ -15,6 +15,12 @@
 	# Create a commit and sign it off
 	c = commit -s -m
 
+	# Push to the master branch of the origin remote
+	p = push origin master
+
+	# Shortcut for diff
+	d = diff
+
 [color]
 	# Activate color use in git commands
 	ui = auto
