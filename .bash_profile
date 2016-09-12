@@ -8,6 +8,7 @@ if [[ $- == *i* && -f $HOME/.bashrc ]]; then
     . $HOME/.bashrc
 fi
 
+# If we are on tty1 we start the x-server
 if [ "$(tty)" = "/dev/tty1" ]; then
     startx && exit
 fi

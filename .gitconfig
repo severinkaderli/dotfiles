@@ -1,0 +1,9 @@
+[user]
+	email = severin.kaderli@gmail.com
+	name = Severin Kaderli
+
+[alias]
+	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	s = status
+	a = add --all
+	c = commit -s -m
