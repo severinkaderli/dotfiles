@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Author: Severin Kaderli <severin.kaderli@gmail.com>
+# Update apt packages, npm modules and composer
+alias update="sudo apt-get update; sudo apt-get dist-upgrade -y; sudo npm update -g; composer self-update"
+
+alias cls="clear"
