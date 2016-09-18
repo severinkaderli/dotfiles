@@ -13,7 +13,7 @@
 	a = add --all
 
 	# Create a commit and sign it off
-	c = commit -s -m
+	c = commit -s
 
 	# Push to the master branch of the origin remote
 	p = push origin master
@@ -24,3 +24,5 @@
 [color]
 	# Activate color use in git commands
 	ui = auto
+[core]
+	editor = vim

@@ -27,5 +27,5 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 mv "$DIR/composer.phar" "$HOME/bin/composer"
 
-# Activate crontab file
-crontab -u $USER "$DIR/.crontab"
+# Link crontab file
+ln -s "$DIR/.crontab" "$HOME/.crontab"

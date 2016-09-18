@@ -17,4 +17,4 @@ else
   resolution="$2"
 fi
 
-livestreamer "twitch.tv/$1" "$resolution"
+livestreamer --http-header Client-ID=ewvlchtxgqq88ru9gmfp1gmyt6h2b93 "twitch.tv/$1"  "$resolution"

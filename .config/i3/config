@@ -228,7 +228,3 @@ assign [class="Audacious"] $workspace10
 
 # Disable window titlebars
 for_window [class="^.*"] border pixel 0
-
-# Gaps
-gaps inner 10
-gaps outer 10
