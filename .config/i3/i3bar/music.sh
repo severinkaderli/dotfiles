@@ -1,3 +1,9 @@
 #!/bin/bash
 
-echo " $(audtool current-song)"
+OUTPUT="$(audtool current-song)"
+
+if [ -z "$OUTPUT" ]; then
+	OUTPUT="Not playing"
+fi
+
+echo " $OUTPUT"

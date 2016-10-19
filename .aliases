@@ -4,4 +4,5 @@
 # Update apt packages, npm modules and composer
 alias update="sudo apt-get update; sudo apt-get dist-upgrade -y; sudo npm update -g; composer self-update"
 
+# Shortcut for clear because I often type the DOS command instead
 alias cls="clear"

@@ -173,6 +173,13 @@ bar {
         font pango: Roboto-Regular, FontAwesome 10
         status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
         position top
+	colors {
+		background #000000
+		separator #000000
+		focused_workspace #000000 #000000 #FF5722
+		inactive_workspace #000000 #424242 #FFFFFF
+		urgent_workspace #000000 #424242 #FFFFFF
+	}
 }
 
 # Custom key bindings
@@ -223,8 +230,6 @@ assign [class="Steam"] $workspace6
 assign [class="KeePass2"] $workspace8
 assign [class="vlc"] $workspace9
 assign [class="Audacious"] $workspace10
-
-# i3-gaps specific
 
 # Disable window titlebars
 for_window [class="^.*"] border pixel 0
