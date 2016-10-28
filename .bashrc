@@ -102,6 +102,11 @@ if [ -f $HOME/.aliases ]; then
     . $HOME/.aliases
 fi
 
+# Enable ibus
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
