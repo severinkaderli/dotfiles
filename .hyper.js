@@ -1,38 +1,25 @@
 module.exports = {
   config: {
-    // default font size in pixels for all tabs
     fontSize: 12,
 
-    // font family with optional fallbacks
     fontFamily: 'Hack, "DejaVu Sans Mono", "Lucida Console", monospace',
 
-    // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
     cursorColor: 'rgba(248,28,229,0.75)',
 
-    // `BEAM` for |, `UNDERLINE` for _, `BLOCK` for █
     cursorShape: 'BLOCK',
 
-    // color of the text
     foregroundColor: '#fff',
 
-    // terminal background color
     backgroundColor: '#000',
 
-    // border color (window, tabs)
     borderColor: '#333',
 
-    // custom css to embed in the main window
     css: '',
 
-    // custom css to embed in the terminal window
     termCSS: '',
 
-    // custom padding (css format, i.e.: `top right bottom left`)
     padding: '12px 14px',
 
-    // the full list. if you're going to provide the full color palette,
-    // including the 6 x 6 color cubes and the grayscale map, just provide
-    // an array here instead of a color map object
     colors: {
       black: '#000000',
       red: '#ff0000',
@@ -52,21 +39,14 @@ module.exports = {
       lightWhite: '#ffffff'
     },
 
-    // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
-    // if left empty, your system's login shell will be used by default
     shell: '',
 
-    // for setting shell arguments (i.e. for using interactive shellArgs: ['-i'])
-    // by default ['--login'] will be used
     shellArgs: ['--login'],
 
-    // for environment variables
     env: {},
 
-    // set to false for no bell
     bell: false,
 
-    // if true, selected text will automatically be copied to the clipboard
     copyOnSelect: false
 
     // URL to custom bell
