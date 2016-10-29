@@ -10,24 +10,15 @@ module.exports = {
 
     foregroundColor: '#C5C8C6',
 
-    backgroundColor: '#1D1F21',
+    backgroundColor: '#000',
 
     borderColor: '#373B41',
-    
-    // Hide the tab bar
-    css: `
-	.header_header {
-	  display: none;
-	}
 
-	.terms_terms {
-	  margin-top: 0;
-	}
-    `,
+    css: "",
 
-    termCSS: '',
+    termCSS: "",
 
-    padding: '12px 14px',
+    padding: "12px",
 
     colors: [
       "#1d1f21",
@@ -49,9 +40,9 @@ module.exports = {
       "#c5c8c6"
     ],
 
-    shell: '',
+    shell: "",
 
-    shellArgs: ['--login'],
+    shellArgs: ["--login"],
 
     env: {},
 
@@ -66,11 +57,9 @@ module.exports = {
   },
 
   plugins: [
-    //"hyperterm-tomorrow-night"
+    "hyper-tomorrow-night",
+    "hyper-hide-tabs"
   ],
 
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
   localPlugins: []
 };

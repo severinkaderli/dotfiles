@@ -1,0 +1,25 @@
+[org/gtk/settings/file-chooser]
+sort-column='name'
+sidebar-width=148
+window-position=(164, 379)
+show-size-column=true
+show-hidden=false
+window-size=(830, 622)
+sort-directories-first=true
+date-format='regular'
+sort-order='ascending'
+location-mode='path-bar'
+
+[desktop/ibus/general]
+engines-order=['xkb:ch::ger', 'mozc-jp']
+embed-preedit-text=true
+use-system-keyboard-layout=true
+use-global-engine=true
+preload-engines=['xkb:ch::ger', 'mozc-jp']
+version='1.5.11'
+
+[desktop/ibus/general/hotkey]
+triggers=['<Super>space']
+
+[desktop/ibus/panel]
+use-custom-font=true
