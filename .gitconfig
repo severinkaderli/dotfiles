@@ -16,7 +16,10 @@
 	c = commit -s
 
 	# Push to the master branch of the origin remote
-	p = push origin master
+	p = push origin master --tags
+	
+	# Tag the latest commit
+	t = !sh -c 'git tag -a $1 -m $1' -
 
 	# Shortcut for diff
 	d = diff
@@ -24,5 +27,6 @@
 [color]
 	# Activate color use in git commands
 	ui = auto
+
 [core]
 	editor = vim
