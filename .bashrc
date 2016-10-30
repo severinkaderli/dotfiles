@@ -107,6 +107,10 @@ export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 
+# Setting default editor
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -116,10 +120,6 @@ if ! shopt -oq posix; then
   elif [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
   fi
-fi
-
-if [ -x /usr/bin/mint-fortune ]; then
-     /usr/bin/mint-fortune
 fi
 
 # Add users bin directory to the PATH

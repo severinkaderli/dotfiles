@@ -7,7 +7,11 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Setting up git configuration
 ln -s "$DIR/.gitconfig" "$HOME/.gitconfig"
 
+# Setting up vim configuration
+ln -s "$DIR/.vimrc" "$HOME/.vimrc"
+
 # Setting up various configuration files
+ln -s "$DIR/.bash_logout" "$HOME/.bash_logout"
 ln -s "$DIR/.bash_profile" "$HOME/.bash_profile"
 ln -s "$DIR/.bashrc" "$HOME/.bashrc"
 ln -s "$DIR/.aliases" "$HOME/.aliases"

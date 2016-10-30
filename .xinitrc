@@ -3,11 +3,11 @@ xset s off
 xset -dpms
 xset s noblank
 
-# Load dconf
-cat "$HOME/dotfiles/dconf/config" | dconf load /
-
 # Start ibus
 ibus-daemon -d --xim
+
+# Load dconf
+dconf load / < "$HOME/dotfiles/dconf/config"
 
 # Start i3
 exec i3
