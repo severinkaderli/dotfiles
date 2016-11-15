@@ -219,7 +219,6 @@ exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280
 
 exec google-chrome-beta
 exec gnome-terminal -x bash -c "sudo apt-get update && sudo apt-get upgrade -y"
-exec audacious
 
 # Assign programs to specific workspaces
 ###
