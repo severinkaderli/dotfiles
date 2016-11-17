@@ -6,3 +6,5 @@ set number
 filetype on
 filetype indent on
 filetype plugin on
+
+:imap jk <Esc>
