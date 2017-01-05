@@ -19,6 +19,7 @@ ln -s "$DIR/.xinitrc" "$HOME/.xinitrc"
 ln -s "$DIR/.Xresources" "$HOME/.Xresources"
 ln -s "$DIR/.config/i3" "$HOME/.config/i3"
 ln -s "$DIR/.dircolors" "$HOME/.dircolors"
+ln -s "$DIR/.config/compton.conf" "$HOME/.config/compton.conf
 
 # Symlinking scripts directory and giving execute permissions
 ln -s "$DIR/bin" "$HOME/bin"

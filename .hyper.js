@@ -58,7 +58,7 @@ module.exports = {
 
   plugins: [
     "hyper-tomorrow-night",
-    "hyper-hide-tabs"
+    "hyper-blink",
   ],
 
   localPlugins: []
