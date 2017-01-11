@@ -16,7 +16,7 @@
 	c = commit -s
 
 	# Push to the master branch of the origin remote
-	p = push origin master --tags
+	p = push --tags
 	
 	# Tag the latest commit
 	t = !sh -c 'git tag -a $1 -m $1' -
@@ -30,5 +30,6 @@
 
 [core]
 	editor = vim
+
 [push]
-	default = matching
+	default = simple
