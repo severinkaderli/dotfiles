@@ -16,7 +16,7 @@
 	c = commit -s
 
 	# Push to the master branch of the origin remote
-	p = push --tags
+	p = push --follow-tags
 	
 	# Tag the latest commit
 	t = !sh -c 'git tag -a $1 -m $1' -
