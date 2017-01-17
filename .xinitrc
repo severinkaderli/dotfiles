@@ -3,6 +3,8 @@ xset s off
 xset -dpms
 xset s noblank
 
+setxkbmap -model pc105 -layout ch
+
 # Start ibus
 ibus-daemon -d --xim
 

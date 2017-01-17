@@ -4,7 +4,7 @@ if [[ -f $HOME/.bashrc ]]; then
 fi
 
 # Activate correct crontab file
-crontab -u severin $HOME/.crontab
+crontab $HOME/.crontab
 
 # If we are on tty1 we start the x-server
 if [ "$(tty)" = "/dev/tty1" ]; then

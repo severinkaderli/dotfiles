@@ -4,6 +4,13 @@
 # Usage: ./install.sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
+# TODO: Install yaourt
+
+# TODO: Install needed packages
+# google-chrome-beta
+# vlc
+# steam
+
 # Setting up git configuration
 ln -s "$DIR/.gitconfig" "$HOME/.gitconfig"
 
