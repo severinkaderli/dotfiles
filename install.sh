@@ -11,6 +11,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # vlc
 # steam
 
+# TODO: Create a function that makes the linking easier and that checks if
+# the links already exists
+
 # Setting up git configuration
 ln -s "$DIR/.gitconfig" "$HOME/.gitconfig"
 
