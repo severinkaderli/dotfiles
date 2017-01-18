@@ -1,6 +1,6 @@
 #!/bin/bash
 # volume.sh
-volume=$(/usr/share/i3blocks/volume 5 pulse)
+volume=$(/usr/lib/i3blocks/volume 5 pulse)
 
 if [ ${volume::-1} -ge "35" ]; then
   echo " $volume"

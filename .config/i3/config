@@ -68,8 +68,8 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # Set monitor names
-set $output1 VGA1
-set $output2 HDMI1
+set $output1 VGA-1
+set $output2 HDMI-1
 set $output3 third
 
 # Set workspace titles
@@ -218,12 +218,10 @@ exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280
 # Other applications
 
 exec google-chrome-beta
-exec gnome-terminal -x bash -c "sudo apt-get update && sudo apt-get upgrade -y"
 
 # Assign programs to specific workspaces
 ###
 assign [class="google-chrome-beta"] $workspace1
-assign [class="Gnome-terminal"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace6
 assign [class="KeePass2"] $workspace8

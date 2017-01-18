@@ -12,4 +12,4 @@ ibus-daemon -d --xim
 dconf load / < "$HOME/dotfiles/dconf/config"
 
 # Start i3
-exec i3
+exec dbus-launch i3
