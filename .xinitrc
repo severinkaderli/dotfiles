@@ -5,11 +5,13 @@ xset s noblank
 
 setxkbmap -model pc105 -layout ch
 
-# Start ibus
-ibus-daemon -d --xim
+# Set ibus as input method
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
 
-# Load dconf
-dconf load / < "$HOME/dotfiles/dconf/config"
+# Start ibus
+ibus-daemon -drx
 
 # Start i3
 exec dbus-launch i3
