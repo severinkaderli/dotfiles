@@ -213,7 +213,7 @@ exec --no-startup-id compton
 exec_always --no-startup-id feh --bg-center /home/severin/GoogleDrive/02_Media/01_Images/01_Wallpaper/Desktop/Zelda_1.jpg
 
 # Monitor settings
-exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280x0 --rotate normal --output VIRTUAL1 --off --output DP1 --off --output $output1 --mode 1280x1024 --pos 0x0 --rotate normal
+exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280x0 --rotate normal --output $output1 --mode 1280x1024 --pos 0x0 --rotate normal
 
 # Other applications
 exec google-chrome-beta
