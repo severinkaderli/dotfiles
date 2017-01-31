@@ -70,12 +70,11 @@ bindsym $mod+a focus parent
 # Set monitor names
 set $output1 VGA-1
 set $output2 HDMI-1
-set $output3 third
 
 # Set workspace titles
 set $workspace1 "1: "
 set $workspace2 "2: "
-set $workspace3 "3: Editor"
+set $workspace3 "3: "
 set $workspace4 "4: "
 set $workspace5 "5: Messaging"
 set $workspace6 "6: "
@@ -221,12 +220,13 @@ exec gnome-terminal
 
 # Assign programs to specific workspaces
 ###
-assign [class="google-chrome-beta"] $workspace1
+assign [class="Google-chrome-beta"] $workspace1
+assign [class="Gnome-terminal"] $workspace2
+assign [class="Hyper"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace6
-assign [class="KeePass2"] $workspace8
-assign [class="vlc"] $workspace9
-assign [class="Audacious"] $workspace10
+assign [class="Keepassx2"] $workspace8
+assign [class="Vlc"] $workspace9
 
 # Disable window titlebars
 for_window [class="^.*"] border pixel 0
