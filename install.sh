@@ -4,12 +4,14 @@
 # Usage: ./install.sh
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# TODO: Install yaourt
+# TODO: Install yaourt or else the next thing fails
 
-# TODO: Install needed packages
-# google-chrome-beta
-# vlc
-# steam
+# Install packages - "yaourt -Qqe > packages.list"
+yaourt -S $(cat "$DIR/yaourt/packages.list")
+
+# Install aur packages - "yaourt -Qqm > packages.aur.list"
+yaourt -S --noconfirm $(cat "$DIR/yaourt/packages.aur.list")
+
 
 # TODO: Create a function that makes the linking easier and that checks if
 # the links already exists
@@ -38,6 +40,7 @@ ln -s "$DIR/bin" "$HOME/bin"
 chmod +x "$HOME/bin/*"
 
 # Download and install composer
+# TODO: Install this using yaourt
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 php composer-setup.php
 php -r "unlink('composer-setup.php');"
