@@ -58,8 +58,7 @@ module.exports = {
 
   plugins: [
     "hyper-tomorrow-night",
-    "hyper-blink",
-    "hyper-statusline"
+    "hyper-blink"
   ],
 
   localPlugins: []

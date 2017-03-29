@@ -50,6 +50,7 @@ export XMODIFIERS=@im=ibus
 # Setting default editor
 export VISUAL=vim
 export EDITOR="$VISUAL"
+export TERMINAL=termite
 
 # Enable autocompletion features
 if [ -f /etc/bash_completion ]; then
