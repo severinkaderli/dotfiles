@@ -229,4 +229,4 @@ for_window [class="^.*"] border pixel 0
 
 # Gaps
 gaps inner 10
-gaps outer 10
+gaps outer 5
