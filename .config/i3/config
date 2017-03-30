@@ -81,7 +81,7 @@ set $workspace10 "10: "
 
 # Assign workspaces to screens
 workspace $workspace1 output $output1
-workspace $workspace2 output $output1
+workspace $workspace2 output $output2
 workspace $workspace3 output $output1
 workspace $workspace4 output $output2
 workspace $workspace5 output $output1
@@ -89,7 +89,7 @@ workspace $workspace6 output $output2
 workspace $workspace7 output $output1
 workspace $workspace8 output $output1
 workspace $workspace9 output $output2
-workspace $workspace10 output $output1
+workspace $workspace10 output $output2
 
 # Workspace switching
 bindsym $mod+1 workspace $workspace1
@@ -194,10 +194,6 @@ bindsym $mod+Ctrl+Left exec cmus-remote -r
 # Moving workspaces to other displays
 bindsym $mod+$alt+Left move workspace to output left
 bindsym $mod+$alt+Right move workspace to output right
-
-# Set default workspaces for displays
-workspace $workspace1 output $output1
-workspace $workspace2 output $output2
 
 # Run specific applications on start
 ###
