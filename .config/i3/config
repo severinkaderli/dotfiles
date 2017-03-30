@@ -17,7 +17,7 @@ font pango:Roboto-Regular 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec termite -c ~/.config/termite/config
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -212,12 +212,12 @@ exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280
 
 # Other applications
 exec google-chrome-beta
-exec gnome-terminal
+exec termite
 
 # Assign programs to specific workspaces
 ###
 assign [class="Google-chrome-beta"] $workspace1
-assign [class="Gnome-terminal"] $workspace2
+assign [class="Termite"] $workspace2
 assign [class="Hyper"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace6
