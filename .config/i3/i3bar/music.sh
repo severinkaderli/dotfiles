@@ -1,8 +1,15 @@
 #!/bin/bash
+# music.sh
 
-OUTPUT="$(audtool current-song)"
+QUERY="$(cmus-remote -Q)"
 
-if [ -z "$OUTPUT" ]; then
+STATUS="$(echo "$QUERY" | grep -e "status " | cut -d " " -f 2)"
+ARTIST="$(echo "$QUERY" | grep -e " artist " | cut -d " " -f 3-)"
+TITLE="$(echo "$QUERY" | grep -e " title " | cut -d " " -f 3-)"
+
+OUTPUT="$ARTIST - $TITLE"
+
+if [ "$STATUS" != "playing" ]; then
 	OUTPUT="Not playing"
 fi
 
