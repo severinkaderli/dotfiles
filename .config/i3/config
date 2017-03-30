@@ -195,6 +195,10 @@ bindsym $mod+Ctrl+Left exec cmus-remote -r
 bindsym $mod+$alt+Left move workspace to output left
 bindsym $mod+$alt+Right move workspace to output right
 
+# Set default workspaces for displays
+workspace $workspace1 output $output1
+workspace $workspace2 output $output2
+
 # Run specific applications on start
 ###
 
