@@ -187,9 +187,9 @@ bindsym $mod+KP_Add exec pactl set-sink-volume 0 +5%
 bindsym $mod+KP_Subtract exec pactl set-sink-volume 0 -5%
 
 # Music controls
-bindsym $mod+KP_Enter exec audtool playback-playpause
-bindsym $mod+Ctrl+Right exec audtool playlist-advance
-bindsym $mod+Ctrl+Left exec audtool playlist-reverse
+bindsym $mod+KP_Enter exec cmus-remote -u
+bindsym $mod+Ctrl+Right exec cmus-remote -n
+bindsym $mod+Ctrl+Left exec cmus-remote -r
 
 # Moving workspaces to other displays
 bindsym $mod+$alt+Left move workspace to output left
