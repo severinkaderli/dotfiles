@@ -47,7 +47,7 @@ export GTK_IM_MODULE=ibus
 export QT_IM_MODULE=ibus
 export XMODIFIERS=@im=ibus
 
-# Setting default editor
+# Setting default editor and terminal
 export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERMINAL=termite
@@ -56,6 +56,7 @@ export TERMINAL=termite
 if [ -f /etc/bash_completion ]; then
 	/etc/bash_completion
 fi
+complete -cf sudo
 
 # Add users bin directory to the PATH
 if [ -d "$HOME/bin" ] ; then

@@ -11,7 +11,7 @@ new_window none
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:Roboto-Regular 10
+font pango:Roboto, FontAwesome 15px
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -165,15 +165,14 @@ bindsym $mod+x mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        font pango: Roboto-Regular, FontAwesome 10
         status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
         position top
 	colors {
 		background #000000
-		separator #000000
-		focused_workspace #000000 #000000 #FF5722
-		inactive_workspace #000000 #424242 #FFFFFF
-		urgent_workspace #000000 #424242 #FFFFFF
+		focused_workspace #000000 #268bd2 #FFFFFF
+		active_workspace #000000 #000000 #268bd2
+		inactive_workspace #000000 #000000 #268bd2
+		urgent_workspace #000000 #000000 #268bd2
 	}
 }
 
@@ -213,11 +212,13 @@ exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280
 # Other applications
 exec google-chrome-beta
 exec termite
+exec termite -e cmus --name cmus
 
 # Assign programs to specific workspaces
 ###
 assign [class="Google-chrome-beta"] $workspace1
-assign [class="Termite"] $workspace2
+assign [instance="termite"] $workspace2
+assign [instance="cmus"] $workspace10
 assign [class="Hyper"] $workspace2
 assign [class="Atom"] $workspace3
 assign [class="Steam"] $workspace6
