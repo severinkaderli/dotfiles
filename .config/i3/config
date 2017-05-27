@@ -180,15 +180,17 @@ bar {
 ###
 # Lock the screen
 bindsym $mod+l exec ~/bin/screenlock.sh
+bindsym XF86Sleep exec --no-startup-id ~/bin/screenlock.sh
 
 # Volume changing
-bindsym $mod+KP_Add exec pactl set-sink-volume 0 +5%
-bindsym $mod+KP_Subtract exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 
 # Music controls
-bindsym $mod+KP_Enter exec cmus-remote -u
-bindsym $mod+Ctrl+Right exec cmus-remote -n
-bindsym $mod+Ctrl+Left exec cmus-remote -r
+bindsym XF86AudioPlay exec --no-startup-id cmus-remote -u
+bindsym XF86AudioNext exec --no-startup-id cmus-remote -n
+bindsym XF86AudioPrev exec --no-startup-id cmus-remote -r
 
 # Moving workspaces to other displays
 bindsym $mod+$alt+Left move workspace to output left
