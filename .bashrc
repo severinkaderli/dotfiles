@@ -63,6 +63,10 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:/opt/Hyper:$PATH"
 fi
 
+GEM_HOME="$(ls -t -U | ruby -e 'puts Gem.user_dir')"
+GEM_PATH="$GEM_HOME"
+PATH="$PATH:$GEM_HOME/bin"
+
 # Set bash prompt
 RCol='\033[0m'
 Gre='\033[32m';
