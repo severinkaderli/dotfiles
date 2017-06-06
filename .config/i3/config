@@ -217,7 +217,7 @@ exec_always --no-startup-id xrandr --output $output2 --mode 1280x1024 --pos 1280
 # Other applications
 exec google-chrome-beta
 exec termite
-exec termite -e cmus --name cmus
+#exec termite -e cmus --name cmus
 
 # Assign programs to specific workspaces
 ###
