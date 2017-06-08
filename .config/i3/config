@@ -138,10 +138,10 @@ bindsym $mod+Shift+KP_9 move container to workspace $workspace9
 bindsym $mod+Shift+KP_0 move container to workspace $workspace10
 
 # Reload configuration file
-bindsym $mod+Shift+r reload
+#bindsym $mod+Shift+r reload
 
 # Restart i3
-#bindsym $mod+Shift+r restart
+bindsym $mod+Shift+r restart
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -165,11 +165,11 @@ bar {
         status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
         position top
 	colors {
-		background #000000
-		focused_workspace #000000 #268bd2 #FFFFFF
-		active_workspace #000000 #000000 #268bd2
-		inactive_workspace #000000 #000000 #268bd2
-		urgent_workspace #000000 #000000 #268bd2
+		background #222D32
+		focused_workspace #222D32 #268bd2 #FFFFFF
+		active_workspace #222D32 #222D32 #268bd2
+		inactive_workspace #222D32 #222D32 #268bd2
+		urgent_workspace #222D32 #222D32 #268bd2
 	}
 }
 
@@ -235,4 +235,4 @@ for_window [class="^.*"] border pixel 0
 
 # Gaps
 gaps inner 10
-gaps outer 5
+gaps outer -10
