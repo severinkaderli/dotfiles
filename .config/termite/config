@@ -21,31 +21,36 @@ cursor_shape = ibeam
 
 #modify_other_keys = false
 
-# Solarized dark color scheme
 [colors]
-foreground = #839496
-foreground_bold = #eee8d5
-#foreground_dim = #888888
-background = #002b36
-cursor = #93a1a1
 
-# if unset, will reverse foreground and background
-#highlight = #839496
 
-# colors from color0 to color254 can be set
-color0 = #073642
-color1 = #dc322f
-color2 = #859900
-color3 = #b58900
-color4 = #268bd2
-color5 = #d33682
-color6 = #2aa198
-color7 = #eee8d5
-color8 = #002b36
-color9 = #cb4b16
-color10 = #586e75
-color11 = #657b83
-color12 = #839496
-color13 = #6c71c4
-color14 = #93a1a1
-color15 = #fdf6e3
+# special
+foreground      = #a1b0b8
+foreground_bold = #a1b0b8
+cursor          = #a1b0b8
+background      = #263238
+
+# black
+color0  = #252525
+color8  = #252525
+
+# red
+color1  = #ff5252
+color9  = #ff5252
+
+# green
+color2  = #c3d82c
+color10 = #c3d82c
+
+# yellow
+color3  = #ffd740
+color11 = #ffd740
+
+# blue
+color4  = #40c4ff
+color12 = #40c4ff
+
+# magenta
+color5  = #ff4081
+color13 = #ff4081
+

@@ -5,5 +5,5 @@
 alias cls="clear"
 
 # Some aliases for ls
-alias ls="ls -l --color=auto"
-alias ll="ls -al"
+alias ls="ls -Fhl --color=auto"
+alias ll="ls -aFhl --color=auto"

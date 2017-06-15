@@ -52,6 +52,8 @@ export VISUAL=vim
 export EDITOR="$VISUAL"
 export TERMINAL=termite
 
+export QT_QPA_PLATFORMTHEME=qt5ct
+
 # Enable autocompletion features
 if [ -f /etc/bash_completion ]; then
 	/etc/bash_completion
