@@ -7,3 +7,5 @@ alias cls="clear"
 # Some aliases for ls
 alias ls="ls -Fhl --color=auto"
 alias ll="ls -aFhl --color=auto"
+
+alias yarn="yarn --ignore-optional"
