@@ -8,4 +8,7 @@ alias cls="clear"
 alias ls="ls -Fhl --color=auto"
 alias ll="ls -aFhl --color=auto"
 
+# cd shortcut to get to my Projects folder
+alias pj="cd ~/Projects"
+
 alias yarn="yarn --ignore-optional"
