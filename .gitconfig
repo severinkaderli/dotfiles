@@ -34,7 +34,7 @@
 [push]
 	default = simple
 
-[url "git@github.com:"]
+[url "git@github.com:severinkaderli/"]
 	insteadOf = git:
 
 [filter "lfs"]
