@@ -32,7 +32,7 @@
 	editor = vim
 
 [push]
-	default = simple
+	default = upstream
 
 [url "git@github.com:severinkaderli/"]
 	insteadOf = git:
